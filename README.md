@@ -31,8 +31,6 @@
 ```bash
 $ npm install
 ```
-$ prisma
-
 ## Running the app
 
 ```bash
@@ -40,7 +38,7 @@ $ prisma
 $ npm run start
 
 # watch mode
-$ npm run start:dev
+$ npm run start
 
 # production mode
 $ npm run start
