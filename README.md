@@ -43,7 +43,7 @@ $ npm run start
 $ npm run start:dev
 
 # production mode
-$ npm run start:prod
+$ npm run start
 ```
 
 #Contem um arquivo para testes no insominia!
