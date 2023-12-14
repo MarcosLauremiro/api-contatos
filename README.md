@@ -29,10 +29,18 @@
 ## Installation
 
 ```bash
-$ npm install
-```
-$ prisma
 
+$ npm install
+
+$ prisma migrate
+
+```
+
+# configurando ENV
+```bash
+SECRET_KEY = 'chave secreta para criação do token de acesso do usaario'
+DATABASE_URL = 'A URL de acesso para o banco de dados, de acordo com o da sua maquina'
+```
 ## Running the app
 
 ```bash
