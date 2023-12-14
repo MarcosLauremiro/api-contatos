@@ -48,10 +48,10 @@ DATABASE_URL = 'A URL de acesso para o banco de dados, de acordo com o da sua ma
 $ npm run start
 
 # watch mode
-$ npm run start:dev
+$ npm run start
 
 # production mode
 $ npm run start
 ```
 
-#Contem um arquivo para testes no insominia!
+# Contem um arquivo para testes no insominia!
