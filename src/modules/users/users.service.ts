@@ -35,8 +35,12 @@ export class UserService {
 
     async findByEmail(email: string) {
         const findUser = await this.prisma.user.findFirst({
-            where: { email }
+            where: { email: email }
         })
+
+        if (!findUser) {
+            throw new NotFoundException('User not found.')
+        }
 
         return findUser
     }

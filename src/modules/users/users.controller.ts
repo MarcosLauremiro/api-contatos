@@ -22,11 +22,18 @@ export class UserController {
         return this.userService.findAll()
     }
 
-    @Get(':id')
+    // @Get(':id')
+    // @ApiBearerAuth()
+    // @UseGuards(JwtAuthGuard)
+    // findOne(@Param('id') id: string) {
+    //     return this.userService.findOne(id)
+    // }
+
+    @Get(':email')
     @ApiBearerAuth()
     @UseGuards(JwtAuthGuard)
-    findOne(@Param('id') id: string) {
-        return this.userService.findOne(id)
+    findEmail(@Param('email') email:string){
+        return this.userService.findByEmail(email)
     }
 
     @Patch(':id')
